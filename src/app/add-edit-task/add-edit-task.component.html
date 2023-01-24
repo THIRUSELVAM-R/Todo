@@ -1,0 +1,7 @@
+<form>
+    <div class="form-group">
+      <label for="yourtask">Add Your Task :</label>
+      <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Enter Task"[(ngModel)]="Task" [ngModelOptions]="{standalone: true}" style="margin-top: 15px;">
+    </div>
+    <button (click)="add()" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+  </form>
