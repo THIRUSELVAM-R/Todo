@@ -18,7 +18,6 @@ export class ShowTaskComponent implements OnInit{
   deleteclick(value: { Id: any; })
   {
     this.service.deletetodo(value.Id).subscribe(data=>{alert(data.toString())});
-    console.log(value.Id);
    // subscribe(data=>{alert(data.toString());
   }
   
